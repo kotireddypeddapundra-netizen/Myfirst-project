@@ -1,4 +1,5 @@
 package com.arrays;
+import java.util.Arrays;
 import java.util.Scanner;
 public class Drive1 {
 
@@ -25,11 +26,11 @@ public class Drive1 {
 				}
 			}
 		}
-		System.out.println("Result Array :");
+		System.out.println("Result Array :"+Arrays.toString(result));
 		
-		for(int i=0;i<n;i++) {
-			System.out.print(result[i] +",");
-		}
+//		for(int i=0;i<n;i++) {
+//			System.out.print(result[i] +",");
+//		}
 		sc.close();
 	}
 }
