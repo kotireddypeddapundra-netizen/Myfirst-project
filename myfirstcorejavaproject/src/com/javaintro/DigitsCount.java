@@ -14,9 +14,8 @@ public class DigitsCount {
 		}
 		else {
 			while (num!=0) {
-				count++;
 				num=num/10;
-				
+				count++;
 			}
 		}
 		System.out.println("number of digits= "+count);
@@ -25,4 +24,3 @@ public class DigitsCount {
 	}
 
 }
-
