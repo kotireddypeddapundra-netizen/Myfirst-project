@@ -43,14 +43,22 @@ public class PrimeCount {
 		System.out.println("Enter a Number : ");
 		int num = sc.nextInt();
 //		boolean isPrime = isPrime(num);
+		System.out.println("Enter How Many Primes You Wanna Print");
+		int primeCount=sc.nextInt();
 		int count=0;
+		
 		for (int i = 2; i <= num; i++) {
 			if (isPrime(i)) {
 				count++;
+				if(count<=primeCount) {
 				System.out.println(i + " ");
+				}
+				if(count==primeCount) {
+					System.out.println(i + " ");
+					}
 			}
 		}
-		System.out.println("The Count IS : "+count);
+		System.out.println("The Prime Numbers Count From 0 To "+num+" Are "+count);
 
 	}
 
