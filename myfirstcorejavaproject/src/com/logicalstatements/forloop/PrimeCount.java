@@ -51,10 +51,11 @@ public class PrimeCount {
 			if (isPrime(i)) {
 				count++;
 				if(count<=primeCount) {
-				System.out.println(i + " ");
+				System.out.print(i + " ");
 				}
 				if(count==primeCount) {
-					System.out.println(i + " ");
+					System.out.println();
+					System.out.println("The Nth Prime Is : "+i);
 					}
 			}
 		}
