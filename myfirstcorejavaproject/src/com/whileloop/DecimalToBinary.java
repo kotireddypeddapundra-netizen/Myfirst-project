@@ -8,7 +8,7 @@ public class DecimalToBinary {
 
 	public static void main(String[] args) {
 		System.out.println("Decimal To Binary");
-		binary();
+		binary1();
 		System.out.println("Binary To Decimal");
 		decimal();
 		sc.close();
@@ -25,7 +25,7 @@ public class DecimalToBinary {
 		int place = 1;
 
 		while (num > 0) {
-			
+
 			int digit = num % 2;// 18%2-->0,9%2-->1,4%2-->0,2%2-->0,1%2-->1------->01001
 //			binaryResult = digit + binaryResult;
 			binaryResult = binaryResult + digit * place;
@@ -50,6 +50,23 @@ public class DecimalToBinary {
 			num = num / 10;
 		}
 		System.out.println("Decimal = " + decimalresult);
+	}
+
+	static void binary1() {
+		System.out.println("Enter a Decimal Number : ");// 10
+		int num = sc.nextInt();
+		int binaryOutput = 0;
+		int placeValue = 1;
+
+		while (num > 0) {
+			int digit = num % 2;// 10%2=0,5%2=1,2%2=0,1%2=1----->0 1 0 1
+			binaryOutput = binaryOutput + digit * placeValue;//0+0=0,0+10=10,10+0=10,10+1000=1010
+			placeValue = placeValue * 10;//10,100,1000,10000
+			num = num / 2;// 10/2=5,5/2=2,2/2=1,1/2=0
+
+		}
+		System.out.println("Binary Output : "+binaryOutput);
+
 	}
 
 }

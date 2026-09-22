@@ -12,12 +12,15 @@ public class SumArray1 {
 		
 		System.out.println("Enter Array Elements :");
 		int sum=0;
+		int product=1;
 		
 		for(int i=0;i<n;i++) {
 			arr[i]=sc.nextInt();
 			sum=sum+arr[i];
+			product=product*arr[i];
 		}
-		System.out.println("Sum of Array Elements :"+sum);
+		System.out.println("Sum of Array Elements : "+sum);
+		System.out.println("Product Of Array Elements : "+product);
 		sc.close();
 		
 	}
