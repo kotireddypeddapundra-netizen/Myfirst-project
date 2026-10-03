@@ -12,24 +12,47 @@ public class MissingNumber1 {
 		int[] arr = new int[size];
 		System.out.println("Enter Array Elements : ");
 
-		for (int i = 0; i < arr.length - 1; i++) {
+		for (int i = 0; i < arr.length; i++) {
 			arr[i] = sc.nextInt();
 		}
-		System.out.println("Missing Number Using Formula : ");
-		missing1(arr);
+//		System.out.println("Single Missing Value : ");
+//		
+//		for (int i = 0; i < arr.length - 1; i++) {
+//			if (arr[i + 1] - arr[i] != 1) {
+//				System.out.print(arr[i] + 1+" ");
+//			}
+//
+//		}
+		System.out.println("Multiple Missing Values : ");
 
-	}
+		for (int i = 0; i < arr.length - 1; i++) {
+			if (arr[i + 1] - arr[i] == 1) {
+				continue;
+			} else if (arr[i + 1] - arr[i] > 1) {
+				int diff = arr[i + 1] - arr[i];
+				for (int j = 1; j < diff; j++) {
+					System.out.println(arr[i] + j);
+				}
 
-	static void missing1(int arr[]) {
+			}
 
-		int expectedSum = arr.length * (arr.length + 1) / 2;
-		int sum = 0;
-		for (int i = 0; i < arr.length; i++) {
-			sum = sum + arr[i];
 		}
-		int result = expectedSum - sum;
 
-		System.out.println(result);
+//		System.out.println("Missing Number Using Formula : ");
+//		missing1(arr);
+
 	}
-	
+
+//	static void missing1(int arr[]) {
+//
+//		int expectedSum = arr.length * (arr.length + 1) / 2;
+//		int sum = 0;
+//		for (int i = 0; i < arr.length; i++) {
+//			sum = sum + arr[i];
+//		}
+//		int result = expectedSum - sum;
+//
+//		System.out.println(result);
+//	}
+//	
 }
