@@ -20,11 +20,11 @@ public class RotateArrayRightLeft {
 		System.out.println("Enter How Many Times You Wanna Rotate : ");
 		int r = sc.nextInt();
 
-//		rotateRight(arr, r);
-//		System.out.println("After Right Rotation : " + Arrays.toString(arr));
+		rotateRight(arr, r);
+		System.out.println("After Right Rotation : " + Arrays.toString(arr));
 
-		rotateLeft(arr, r);
-		System.out.println("After Left Rotation : " + Arrays.toString(arr));
+//		rotateLeft(arr, r);
+//		System.out.println("After Left Rotation : " + Arrays.toString(arr));
 
 	}
 
