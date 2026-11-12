@@ -9,11 +9,14 @@ public class HelloWorld {
 	static void show(Integer a) {
 		System.out.println("Hello From A");
 }
-	static void show(String s) {
+	static void show(long l) {
 		System.out.println("Hello From B");
 }
 
 	public static void main(String[] args) {
+		
+		show(200);
+		
 //		Scanner sc = new Scanner(System.in);
 //		System.out.println("Enter A Number : ");
 //		int num1 = sc.nextInt();
